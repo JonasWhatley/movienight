@@ -1,0 +1,21 @@
+<div class="mistvideo" id="movie_NUBv5SAvPJ2A">
+  <noscript>
+    <a href="http://localhost:8080/movie.html" target="_blank">
+      Click here to play this video
+    </a>
+  </noscript>
+  <script>
+    var a = function(){
+      mistPlay("movie",{
+        target: document.getElementById("movie_NUBv5SAvPJ2A")
+      });
+    };
+    if (!window.mistplayers) {
+      var p = document.createElement("script");
+      p.src = "http://localhost:8080/player.js"
+      document.head.appendChild(p);
+      p.onload = a;
+    }
+    else { a(); }
+  </script>
+</div>
